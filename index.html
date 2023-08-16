@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+
+        <div id="start" ?>
+            <h3> Larum ipsum</h3>
+            <h3> Larum ipsum</h3>
+
+            <button id="sbtn">Start Quiz</button>
+            <button id="scorebtn" onclick="showHighscore()">High Scores</button>
+
+        </div>
+
+    </div>
+    <div id="end">
+
+        <div id="endScore"></div>
+        <input type="text" size="35" placeholder="Enter your Initials" name="intials" id="initials" />
+        <button id="submitScore">Submit</button>
+    </div>
+    <div id=scoreContainer>
+        <div id="scorePage">
+            <div id="highscore-header">
+                <h3>Initials</h3>
+                <h3>Score</h3>
+            </div>
+            <div id="highscore-abc"></div>
+            <div id="highscore-num"></div>
+        </div>
+        <div id="endbtns">
+            <button id="tryAgain" onclick="replayQuiz()">Try Again?</button>
+            <button id="clearScore" onclick="clearScore()">Clear Scores</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
