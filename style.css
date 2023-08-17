@@ -3,26 +3,287 @@
 }
 
 body {
-    background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;;
+    background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
+    ;
 }
 
 .box {
     display: flex;
-    width: 80vh;
-    height: 30vh;
+    width: 1000px;
+    height: 240px;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    background-color: rgb(238, 0, 0) ;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(238, 0, 0);
     clip-path: polygon();
     box-shadow: inset -4px 0 0 0 rgb(98, 232, 236);
-    margin: 20px;
+    margin-top: 200px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 95%, 85% 95%, 85% 100%, 8% 100%, 0 70%);
+    ;
 }
 
-.cbtn { 
+h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.cbtn {
     background-color: #007aff;
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: white;
+    font-size: x-large;
+    margin: 8px;
+
 }
 
 .cbtn:first-of-type {
-    background-color: rgb(78, 21, 184) ;
+    background-color: rgb(78, 21, 184);
+}
+
+.cbtn:hover {
+    -webkit-filter: brightness(90%);
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#end {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 400px;
+    padding: 5px;
+    height: 90px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px;
+    justify-content: center;
+}
+
+#quiz {
+    display: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+#timer {
+    background-color: #f5ed00;
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#questions {
+    background-color: black;
+    width: auto;
+    padding: 5px;
+    height: 50px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#result {
+    display: none;
+}
+
+#scoreContainer {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#tryAgain {
+    background-color: rgb(78, 21, 184);
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: white;
+    font-size: x-large;
+    margin: 8px;
+}
+
+#clearScore {
+    background-color: #007aff;
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: white;
+    font-size: x-large;
+    margin: 8px;
+}
+
+.choice {
+    background-color: #007aff;
+    width: 200px;
+    height: 70px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin: 8px;
+}
+
+#endscore {
+    background-color: black;
+    width: auto;
+    padding: 5px;
+    height: 50px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitScore {
+    background-color: #007aff;
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: inset -3px 0 0 0 rgb(98, 232, 236);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    ;
+    color: white;
+    font-size: x-large;
+    margin: 8px;
+}
+
+#highscore-header {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#highscore-abc {
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    padding-right: 100px;
+    list-style: none;
+    font-size: 20px;
+}
+
+#highscore-num {
+    float: right;
+    color: white;
+    padding-right: 100px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:980px) {
+    .box {
+        width: 70vh;
+        height: 480px;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #timer {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        width: 50vh;
+        height: 480px;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .box {
+        width: 40vh;
+        height: 500px;
+    }
+
+    .cbtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    #tryAgain {
+        width: 160px;
+    }
+
+    #clearScore {
+        width: 160px;
+    }
+
 }
