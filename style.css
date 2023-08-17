@@ -8,12 +8,21 @@ body {
 
 .box {
     display: flex;
-    width: 100vh;
-    height: 55vh;
+    width: 80vh;
+    height: 30vh;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     background-color: rgb(238, 0, 0) ;
     clip-path: polygon();
     box-shadow: inset -4px 0 0 0 rgb(98, 232, 236);
+    margin: 20px;
+}
+
+.cbtn { 
+    background-color: #007aff;
+}
+
+.cbtn:first-of-type {
+    background-color: rgb(78, 21, 184) ;
 }

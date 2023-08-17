@@ -14,33 +14,41 @@
         <div id="start" ?>
             <h3> LARUM IPSUM</h3>
             <h3> LARUM IPSUM</h3>
-
-            <button id="sbtn">Start Quiz</button>
-            <button id="scorebtn" onclick="showHighscore()">High Scores</button>
-
+            <button class="cbtn" id="sbtn">Start Quiz</button>
+            <button class="cbtn" id="scorebtn" onclick="showHighscore()">High Scores</button>
         </div>
 
-    </div>
-    <div id="end">
-
-        <div id="endScore"></div>
-        <input type="text" size="35" placeholder="Enter your Initials" name="intials" id="initials" />
-        <button id="submitScore">Submit</button>
-    </div>
-    <div id=scoreContainer>
-        <div id="scorePage">
-            <div id="highscore-header">
-                <h3>Initials</h3>
-                <h3>Score</h3>
+        <div id="quiz">
+            <div id="timer">Time: </div>
+            <div id="questions">
+                <p>Questions</p>
             </div>
-            <div id="highscore-abc"></div>
-            <div id="highscore-num"></div>
+            <button id="a" onclick="checkAnswer('a')">A</button>
+            <button id="b" onclick="checkAnswer('b')">B</button>
+            <button id="c" onclick="checkAnswer('c')">C</button>
+            <button id="d" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
         </div>
-        <div id="endbtns">
-            <button id="tryAgain" onclick="replayQuiz()">Try Again?</button>
-            <button id="clearScore" onclick="clearScore()">Clear Scores</button>
+        <div id="end">
+
+            <div id="endScore"></div>
+            <input type="text" size="35" placeholder="Enter your Initials" name="intials" id="initials" />
+            <button id="submitScore">Submit</button>
         </div>
-    </div>
+        <div id=scoreContainer>
+            <div id="scorePage">
+                <div id="highscore-header">
+                    <h3>Initials</h3>
+                    <h3>Score</h3>
+                </div>
+                <div id="highscore-abc"></div>
+                <div id="highscore-num"></div>
+            </div>
+            <div id="endbtns">
+                <button id="tryAgain" onclick="replayQuiz()">Try Again?</button>
+                <button id="clearScore" onclick="clearScore()">Clear Scores</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
